@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thai Global Gateway Co.,Ltd</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+        header {
+            background-image: url('banner.webp'); /* Replace with your background image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            height: 50vh; /* Full screen height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Overlay effect */
+        }
+        header h1, header p {
+            position: relative;
+            z-index: 1;
+        }
+        header img {
+            position: relative;
+            z-index: 1;
+            width: 600px; /* Adjust logo size */
+            margin-bottom: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #2980b9;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 30px;
+        }
+        .about {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            padding: 50px;
+        }
+        .about img {
+            max-width: 100%;
+            width: 400px; /* Adjust office image size */
+            height: auto;
+        }
+        .about .content {
+            max-width: 600px;
+            text-align: left;
+            line-height: 26px;
+        }
+        .gallery {
+            background-color: #eaf2f8;
+        }
+        .gallery .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .gallery img {
+            max-width: 300px;
+            width: 100%;
+            height: 300px;
+            border: 2px solid #ddd;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            .about {
+                flex-direction: column;
+                text-align: center;
+            }
+            .about .content {
+                text-align: center;
+            }
+        }
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2em;
+            }
+            header img {
+                width: 400px;
+            }
+            section {
+                padding: 30px;
+            }
+            nav a {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.webp" alt="Thai Global Gateway Logo"> <!-- Replace with your logo -->    </header>
+
+    <nav>
+    </nav>
+
+    <section id="about" class="about">
+        <img src="about-us.webp" alt="Office Image"> <!-- Replace with your office image -->
+        <div class="content">
+            <h2>About Us</h2>
+            <p>
+                Thai Global Gateway has been a prominent partner in mobile and electronic trade for Apple, Samsung and many other andriod phones for the past 10 years. We are located in 30, Soi Sukhumvit 61 (Settha But), Khlong Tan Nuea district, Vadhana District, Bangkok.
+            </p>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="images">
+            <img src="office1.png" alt="Office Image 1"> <!-- Replace with office image 1 -->
+            <img src="office2.png" alt="Office Image 2"> <!-- Replace with office image 2 -->
+            <img src="warehouse1.JPG" alt="Warehouse Image 1"> <!-- Replace with warehouse image 1 -->
+            <img src="warehouse2.JPG" alt="Warehouse Image 2"> <!-- Replace with warehouse image 2 -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Thai Global Gateway. All rights reserved.</p>
+    </footer>
+</body>
+</html>
